@@ -1,0 +1,141 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+img {
+   max-width: 100%;
+}
+
+.appointment{
+    padding: 100px 20px;
+    background-color: antiquewhite;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.appointment-container{
+    display: flex;
+}
+
+.appointment-img,
+.appointment-form{
+    flex-basis: 100%;
+}
+
+.appointment-img img{
+    border-radius: 8px 0px 0px 8px ;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.appointment-form h3{
+text-align: center;
+color: black;
+font-size: 30px;
+font-weight: 600;
+text-transform: capitalize;
+margin-top: 0px;
+}
+
+.appointment-form{
+    border: 1px solid gainsboro;
+   background-color:white;
+    border-radius: 0px 8px 8px 0px;
+    padding: 30px;
+   
+}
+
+.appointment-form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 2px solid #79eeeb7b;
+    font-size: 20px;
+}
+.appointment-form textarea{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 2px solid #79eeeb7b;
+    font-size: 20px;
+}
+.gender p{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.gender-group{
+    font-size: 20px;
+}
+
+.gender input{
+    width:30px;
+    height: 18px;
+}
+
+input.btn{
+    border: none;
+    background-color:#79eeeb7b;
+    color:black;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+    .appointment-container{
+      flex-direction: column;
+
+    }
+    
+    .appointment{
+        padding: 20px 20px;
+    }
+
+    .appointment-img img{
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+       border-radius: 8px 8px;
+       margin-bottom: 0px;
+    }
+
+    .appointment-form h3{
+        font-size: 25px;
+    }
+
+    .appointment-form input{
+        font-size: 12px;
+    }
+    .appointment-form textarea{
+        font-size: 12px;
+    }
+    .gender p{
+        font-size: 20px;
+    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    .gender-group{
+        font-size: 16px;
+    }
+
+    .gender input{
+        width:20px;
+        height: 15px;
+    }
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Consultent</title>
+  </head>
+  <body>
+    <main>
+
+      <section class="appointment">
+        <div class="container appointment-container">
+          <div class="appointment-img">
+            <img src="img/doctor1.jpg" alt="profile picture" />
+          </div>
+
+          <div class="appointment-form">
+            <h3>book a consultation</h3>
+
+            <form action="https://formspree.io/f/xkndvdev"
+  method="POST">
+              <input type="text" placeholder="e.g john doe" name="your-name" />
+              <input
+                type="email"
+                placeholder="rm@gmail.com"
+                name="your-email"
+              />
+              <textarea
+                name="your-message"
+                placeholder="hello, i have issues..."
+                cols="30"
+                rows="6"
+              ></textarea>
+              <div class="gender">
+                <p>choose your gender</p>
+                <label for="gender" class="gender-group">Male</label>
+                <input type="radio" name="gender" value="male" />
+                <label for="gender" class="gender-group">Female</label>
+                <input type="radio" name="gender" value="female" />
+              </div>
+              <input type="submit" value="book a call" class="btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
